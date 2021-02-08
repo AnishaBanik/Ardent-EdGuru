@@ -1,0 +1,74 @@
+@media (max-width: 786px){
+  .input-box{
+    margin-left: 30%;
+  }
+  .join-cards{
+  width: 60%;
+    height: auto;
+    margin: 8% 18% !important;
+    border-radius: 12px !important;
+    border: none !important;
+  }
+  .left_content{
+  font-family: Gayathri;
+    font-size: 50px !important;
+    text-align: center;
+    padding: 8%;
+  }
+}
+.join-cards{
+  width: 60%;
+    height: auto;
+    margin: 18% 0%;
+    border-radius: 12px !important;
+    border: none !important;
+}
+.right-shift {
+    margin-left: 38%;
+}
+.join-card-left{
+  width: 60%;
+    height: auto;
+    border-radius: 12px !important;
+    border: none !important;
+}
+.enroll-btn{
+       background-image: linear-gradient(to right, #0e0869, #7a84f3);
+    color: white !important;
+    padding: 1% 13% !important;
+    margin: 4% 0%;
+    width: auto;
+    height: auto;
+    border-radius: 12px !important;
+    font-size: 23px !important;
+    border: none !important;
+}
+.join_head{
+ font-family: Gayathri;
+    font-size: 40px;
+    text-align: center;
+    padding: 8%;
+}
+.sub_heading{
+  font-family: Average Sans;
+    font-size: 24px;
+    text-align: center;
+}
+.left_content{
+  font-family: Gayathri;
+    font-size: 70px;
+    text-align: center;
+    padding: 8%;
+}
+.radio-input{
+
+   font-family: Average Sans;
+    font-size: 17px;
+
+}
+.subject-input{
+  text-align: center;
+  font-family: Average Sans;
+    font-size: 17px;
+
+}
