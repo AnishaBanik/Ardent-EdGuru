@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Edguru India</title>
+  <title>{!!@$title!!}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Gayathri' rel='stylesheet'>
@@ -40,21 +40,20 @@
   <div class="row">
     <div class="col-md-7 col-sm-12">
       <p class="header">
-        ONLINE LEARNING
+        {{$setting[0]->heading}}
         <p class="for-all">
           for all!
         </p>
       </p>
       <p class="desc">
-        Welcome to the gateway of online learning. 
-        Choose your class/tution and register to start a life altering journey bringing you closer to your goals.
+       {{$setting[0]->description}}
       </p>
       <button class="learn-btn">
         Learn More
       </button>
     </div>
     <div class="col-md-5 d-none d-lg-block">
-      <img src="./images/image0.png" alt="image1" class="image1">
+      <img src="{{ Voyager::image( $setting[0]->logo ) }}" alt="image1" class="image1">
     </div>
   </div>
 </section>
@@ -62,29 +61,28 @@
 <section id="switch">
   <div class="row switch-to">
     <div class="col-md-4 col-sm-4 ">
-      <img src="./images/vector2.jpg" alt="image2" class="image2">
+      <img src="{{ Voyager::image( $setting[1]->logo ) }}" alt="image2" class="image2">
     </div>
     <div class="col-md-8 col-sm-12 switch-to-desc">
       <h4 class="scnd_head">
-        Switch to EdGuru
+        {{$setting[1]->heading}}
       </h4>
       <p class="scnd_desc">
-        Learn from the best gurus online from the comfort and safety of your home. <br>
-        Our panel of teachers are a few clicks away.
+         {!!$setting[1]->description!!}
       </p>
       <div class="row">
         <div class="col-sm-12">
           <div class="col-md-4 col-sm-12">
-            <img src="./images/circle-1.png" alt="image10" class="image10">
-            <p class="scnd-img-desc">Easy to register for free. Pay once you choose.</p>
+            <img src="{{ Voyager::image( $slider[0]->logo ) }}" alt="image10" class="image10">
+            <p class="scnd-img-desc">{!!$slider[0]->description!!}</p>
           </div>
           <div class="col-md-4 col-sm-12">
-            <img src="./images/circle-2.png" alt="image11" class="image10">
-            <p class="scnd-img-desc">Panel of experienced teachers at your fingertips.</p>
+            <img src="{{ Voyager::image( $slider[1]->logo ) }}" alt="image11" class="image10">
+            <p class="scnd-img-desc">{!!$slider[1]->description!!}</p>
           </div>
           <div class="col-md-4 col-sm-12">
-            <img src="./images/circle-3.png" alt="image12" class="image10">
-            <p class="scnd-img-desc">Flexible slot selection based on your timing.</p>
+            <img src="{{ Voyager::image( $slider[2]->logo ) }}" alt="image12" class="image10">
+            <p class="scnd-img-desc">{!!$slider[2]->description!!}</p>
           </div>
         </div>
        
@@ -97,10 +95,10 @@
   <div class="row">
     <div class="col-sm-12" style="background: white">
       <p class="third_head">
-        What we offer
+        {{$setting[2]->heading}}
       </p>
       <p class="third_desc">
-        We have empanelled vast of experienced school and private tutors,<br> who will now be available for online live tution classes. <br>Choose your class according to your board/grade and other options.
+        {!!$setting[2]->description!!}
       </p>
             
     </div>
@@ -109,8 +107,8 @@
         <div class="col-md-4 col-sm-12 cardboard-parent ">
           <div class="cards cardboard card">
             <div class="card-body">
-              <img src="./images/Capture4.JPG" alt="image4" class="image4">
-              <p class="board-name-footer"> <b> ICSE BOARD </b>
+              <img src="{{ Voyager::image( $slider[3]->logo ) }}" alt="image4" class="image4">
+              <p class="board-name-footer"> <b> {!!$slider[3]->description!!} </b>
               </p>
             </div>
           </div>
@@ -118,8 +116,8 @@
         <div class="col-md-4 col-sm-12 cardboard-parent">
           <div class="cards cardboard card">
             <div class="card-body" >
-              <img src="./images/Capture5.JPG" alt="image5" class="image5">
-              <p class="board-name-footer"> <b> WB BOARD </b>
+              <img src="{{ Voyager::image( $slider[4]->logo ) }}" alt="image5" class="image5">
+              <p class="board-name-footer"> <b> {!!$slider[4]->description!!} </b>
               </p>
             </div>
           </div>
@@ -127,8 +125,8 @@
         <div class="col-md-4 col-sm-12 cardboard-parent">
           <div class="cards cardboard card">
             <div class="card-body">
-              <img src="./images/Capture6.JPG" alt="image6" class="image6">
-              <p class="board-name-footer"> <b>CBSE BOARD </b>
+              <img src="{{ Voyager::image( $slider[5]->logo ) }}" alt="image6" class="image6">
+              <p class="board-name-footer"> <b>{!!$slider[5]->description!!} </b>
               </p>
             </div>
           </div>
@@ -141,31 +139,30 @@
   <div class="row">
     <div class="forth_row_up col-sm-12">
       <p class="forth_head">
-        Register with us for free
+        {{$setting[3]->heading}}
       </p>
       <p class="forth_desc">
-        You are a few clicks away from entering a new age of learning/teaching experience. <br>
-        Please register here.
+         {{$setting[3]->description}}
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-sm-12">
       <div class="card join-card">
-        <img src="./images/student.jpg" alt="image7" class="image7">
+        <img src="{{ Voyager::image( $slider[6]->logo ) }}" alt="image7" class="image7">
         <a href="/student_register">
           <button class="stu-teach">
-            As a student 
+            {!!$slider[6]->description!!}
           </button>
         </a>
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
       <div class="card join-card">
-        <img src="./images/teacher.jpg" alt="image8" class="image7">
+        <img src="{{ Voyager::image( $slider[7]->logo ) }}" alt="image8" class="image7">
         <a href="/teacher_register">
           <button class="stu-teach">
-          As a teacher
+          {!!$slider[7]->description!!}
           </button> 
         </a>
         
@@ -180,28 +177,28 @@
     </div>
     <div class="col-md-5 col-lg-5">
       <p class="last_head">
-        Contact Us
+        {{$setting[4]->heading}}
       </p>
       <div class="row">
         
         <div class="col-md-12 col-sm-12" style="text-align: center; !important; ">
           <p class="email">
-            <b>EMAIL ADDRESS</b>
+            <b>{{$contact[0]->head}}</b>
           </p>
           <p class="email_id">
-            info@edguruindia.com
+            {{$contact[0]->description}}
           </p> 
           <p class="mail">
-            <b>MAILING ADDRESS</b>
+            <b>{{$contact[1]->head}}</b>
           </p>
           <p class="mail_id">
-            123 Anywhere St. Any City, ST 12345
+             {{$contact[1]->description}}
           </p>
           <p class="phn">
-            <b>PHONE NUMBER</b>
+            <b>{{$contact[2]->head}}</b>
           </p>
           <p class="phn_no">
-            (123) 456-7890
+             {{$contact[2]->description}}
           </p>
         </div>  
       </div>
